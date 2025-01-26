@@ -1,12 +1,13 @@
-import 'module-alias/register'; // Registers aliases for use
 import express from 'express';
 
+// eslint-disable-next-line node/no-missing-import
+import { requestLogger } from '@middleware/logger.middleware.js';
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(express.json());
-
+app.use(requestLogger);
 // Sample route
 app.get('/', (req, res) => {
   res.send('Welcome to Node.js ESM Best Practices!');
