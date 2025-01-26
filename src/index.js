@@ -1,3 +1,4 @@
+import 'module-alias/register'; // Registers aliases for use
 import express from 'express';
 
 const app = express();
