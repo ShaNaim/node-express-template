@@ -1,0 +1,46 @@
+{
+  "name": "express-template",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShaNaim/node-express-template.git"
+  },
+  "engines": {
+    "node": "=v20.16.0",
+    "npm": ">=10.8.2"
+  },
+  "author": "ShaNaim",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^8.49.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
