@@ -25,12 +25,18 @@
     "@eslint/js": "^8.49.0",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.0",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "uuid": "^11.0.5"
   },
   "husky": {
     "hooks": {
