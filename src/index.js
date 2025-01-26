@@ -1,7 +1,7 @@
 import express from 'express';
 
 // eslint-disable-next-line node/no-missing-import
-import { requestLogger } from '@middleware/logger.middleware.js';
+import { requestLogger } from './middleware/logger.middleware.js';
 const app = express();
 const PORT = process.env.PORT || 3001;
 
